@@ -21,4 +21,4 @@ const postSchema=new mongoose.Schema({
         required:true
     }
 })
-module.exports=mongoose.model('User',userSchema)
+module.exports=mongoose.model('User',postSchema)
