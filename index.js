@@ -3,9 +3,11 @@ const app=express();
 const port=4000;
 
 const user=require('./routes/user')
+const post=require('./routes/post')
 
 app.use(express.json())
 app.use('/user',user)
+app.use('/post',post)
 
 //connect mongo db
 const mongoose=require("mongoose")
